@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AgentPro</string>
+    <string name="content_description_media">agent_image</string>
+    <string name="agent_name">AgentName</string>
+    <string name="agent_role">AgentRole</string>
+    <string name="agent_description">AgentDescription</string>
+    <string name="agent_abilities">Abilities</string>
+    <string name="fab_desc">ability_fab</string>
+    <string name="ability_tv_fab">AbilityFab</string>
+    <string name="bg_img">bg_img</string>
+    <!--Roles-->
+    <string name="controller_role">Controller</string>
+    <string name="duelist_role">Duelist</string>
+    <string name="initiator_role">Initiator</string>
+    <string name="sentinel_role">Sentinel</string>
+    <!--Brim-->
+    <string name="brim_name">Brimstone</string>
+    <string name="brim_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="brim_ability_basic1_name">Stim Beacon</string>
+    <string name="brim_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="brim_ability_basic2_name">Incendiary</string>
+    <string name="brim_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="brim_ability_signature_name">Sky Smoke</string>
+    <string name="brim_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="brim_ability_ultimate_name">Orbital Strike</string>
+    <string name="brim_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+
+</resources>
