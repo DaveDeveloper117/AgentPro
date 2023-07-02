@@ -23,5 +23,235 @@
     <string name="brim_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
     <string name="brim_ability_ultimate_name">Orbital Strike</string>
     <string name="brim_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
-
+    <!--Viper-->
+    <string name="viper_name">Brimstone</string>
+    <string name="viper_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="viper_ability_basic1_name">Stim Beacon</string>
+    <string name="viper_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="viper_ability_basic2_name">Incendiary</string>
+    <string name="viper_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="viper_ability_signature_name">Sky Smoke</string>
+    <string name="viper_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="viper_ability_ultimate_name">Orbital Strike</string>
+    <string name="viper_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Omen-->
+    <string name="omen_name">Brimstone</string>
+    <string name="omen_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="omen_ability_basic1_name">Stim Beacon</string>
+    <string name="omen_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="omen_ability_basic2_name">Incendiary</string>
+    <string name="omen_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="omen_ability_signature_name">Sky Smoke</string>
+    <string name="omen_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="omen_ability_ultimate_name">Orbital Strike</string>
+    <string name="omen_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Killjoy-->
+    <string name="killjoy_name">Brimstone</string>
+    <string name="killjoy_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="killjoy_ability_basic1_name">Stim Beacon</string>
+    <string name="killjoy_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="killjoy_ability_basic2_name">Incendiary</string>
+    <string name="killjoy_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="killjoy_ability_signature_name">Sky Smoke</string>
+    <string name="killjoy_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="killjoy_ability_ultimate_name">Orbital Strike</string>
+    <string name="killjoy_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Cypher-->
+    <string name="cypher_name">Brimstone</string>
+    <string name="cypher_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="cypher_ability_basic1_name">Stim Beacon</string>
+    <string name="cypher_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="cypher_ability_basic2_name">Incendiary</string>
+    <string name="cypher_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="cypher_ability_signature_name">Sky Smoke</string>
+    <string name="cypher_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="cypher_ability_ultimate_name">Orbital Strike</string>
+    <string name="cypher_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Sova-->
+    <string name="sova_name">Brimstone</string>
+    <string name="sova_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="sova_ability_basic1_name">Stim Beacon</string>
+    <string name="sova_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="sova_ability_basic2_name">Incendiary</string>
+    <string name="sova_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="sova_ability_signature_name">Sky Smoke</string>
+    <string name="sova_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="sova_ability_ultimate_name">Orbital Strike</string>
+    <string name="sova_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Sage-->
+    <string name="sage_name">Brimstone</string>
+    <string name="sage_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="sage_ability_basic1_name">Stim Beacon</string>
+    <string name="sage_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="sage_ability_basic2_name">Incendiary</string>
+    <string name="sage_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="sage_ability_signature_name">Sky Smoke</string>
+    <string name="sage_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="sage_ability_ultimate_name">Orbital Strike</string>
+    <string name="sage_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Phoenix-->
+    <string name="phoenix_name">Brimstone</string>
+    <string name="phoenix_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="phoenix_ability_basic1_name">Stim Beacon</string>
+    <string name="phoenix_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="phoenix_ability_basic2_name">Incendiary</string>
+    <string name="phoenix_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="phoenix_ability_signature_name">Sky Smoke</string>
+    <string name="phoenix_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="phoenix_ability_ultimate_name">Orbital Strike</string>
+    <string name="phoenix_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Jett-->
+    <string name="jett_name">Brimstone</string>
+    <string name="jett_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="jett_ability_basic1_name">Stim Beacon</string>
+    <string name="jett_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="jett_ability_basic2_name">Incendiary</string>
+    <string name="jett_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="jett_ability_signature_name">Sky Smoke</string>
+    <string name="jett_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="jett_ability_ultimate_name">Orbital Strike</string>
+    <string name="jett_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Reyna-->
+    <string name="reyna_name">Brimstone</string>
+    <string name="reyna_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="reyna_ability_basic1_name">Stim Beacon</string>
+    <string name="reyna_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="reyna_ability_basic2_name">Incendiary</string>
+    <string name="reyna_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="reyna_ability_signature_name">Sky Smoke</string>
+    <string name="reyna_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="reyna_ability_ultimate_name">Orbital Strike</string>
+    <string name="reyna_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Raze-->
+    <string name="raze_name">Brimstone</string>
+    <string name="raze_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="raze_ability_basic1_name">Stim Beacon</string>
+    <string name="raze_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="raze_ability_basic2_name">Incendiary</string>
+    <string name="raze_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="raze_ability_signature_name">Sky Smoke</string>
+    <string name="raze_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="raze_ability_ultimate_name">Orbital Strike</string>
+    <string name="raze_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Breach-->
+    <string name="breach_name">Brimstone</string>
+    <string name="breach_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="breach_ability_basic1_name">Stim Beacon</string>
+    <string name="breach_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="breach_ability_basic2_name">Incendiary</string>
+    <string name="breach_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="breach_ability_signature_name">Sky Smoke</string>
+    <string name="breach_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="breach_ability_ultimate_name">Orbital Strike</string>
+    <string name="breach_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Skye-->
+    <string name="skye_name">Brimstone</string>
+    <string name="skye_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="skye_ability_basic1_name">Stim Beacon</string>
+    <string name="skye_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="skye_ability_basic2_name">Incendiary</string>
+    <string name="skye_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="skye_ability_signature_name">Sky Smoke</string>
+    <string name="skye_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="skye_ability_ultimate_name">Orbital Strike</string>
+    <string name="skye_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Yoru-->
+    <string name="yoru_name">Brimstone</string>
+    <string name="yoru_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="yoru_ability_basic1_name">Stim Beacon</string>
+    <string name="yoru_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="yoru_ability_basic2_name">Incendiary</string>
+    <string name="yoru_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="yoru_ability_signature_name">Sky Smoke</string>
+    <string name="yoru_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="yoru_ability_ultimate_name">Orbital Strike</string>
+    <string name="yoru_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Astra-->
+    <string name="astra_name">Brimstone</string>
+    <string name="astra_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="astra_ability_basic1_name">Stim Beacon</string>
+    <string name="astra_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="astra_ability_basic2_name">Incendiary</string>
+    <string name="astra_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="astra_ability_signature_name">Sky Smoke</string>
+    <string name="astra_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="astra_ability_ultimate_name">Orbital Strike</string>
+    <string name="astra_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--KAY/O-->
+    <string name="kayo_name">Brimstone</string>
+    <string name="kayo_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="kayo_ability_basic1_name">Stim Beacon</string>
+    <string name="kayo_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="kayo_ability_basic2_name">Incendiary</string>
+    <string name="kayo_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="kayo_ability_signature_name">Sky Smoke</string>
+    <string name="kayo_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="kayo_ability_ultimate_name">Orbital Strike</string>
+    <string name="kayo_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Chamber-->
+    <string name="chamber_name">Brimstone</string>
+    <string name="chamber_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="chamber_ability_basic1_name">Stim Beacon</string>
+    <string name="chamber_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="chamber_ability_basic2_name">Incendiary</string>
+    <string name="chamber_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="chamber_ability_signature_name">Sky Smoke</string>
+    <string name="chamber_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="chamber_ability_ultimate_name">Orbital Strike</string>
+    <string name="chamber_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Neon-->
+    <string name="neon_name">Brimstone</string>
+    <string name="neon_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="neon_ability_basic1_name">Stim Beacon</string>
+    <string name="neon_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="neon_ability_basic2_name">Incendiary</string>
+    <string name="neon_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="neon_ability_signature_name">Sky Smoke</string>
+    <string name="neon_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="neon_ability_ultimate_name">Orbital Strike</string>
+    <string name="neon_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Fade-->
+    <string name="fade_name">Brimstone</string>
+    <string name="fade_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="fade_ability_basic1_name">Stim Beacon</string>
+    <string name="fade_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="fade_ability_basic2_name">Incendiary</string>
+    <string name="fade_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="fade_ability_signature_name">Sky Smoke</string>
+    <string name="fade_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="fade_ability_ultimate_name">Orbital Strike</string>
+    <string name="fade_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Harbor-->
+    <string name="harbor_name">Brimstone</string>
+    <string name="harbor_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="harbor_ability_basic1_name">Stim Beacon</string>
+    <string name="harbor_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="harbor_ability_basic2_name">Incendiary</string>
+    <string name="harbor_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="harbor_ability_signature_name">Sky Smoke</string>
+    <string name="harbor_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="harbor_ability_ultimate_name">Orbital Strike</string>
+    <string name="harbor_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Gekko-->
+    <string name="gekko_name">Brimstone</string>
+    <string name="gekko_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="gekko_ability_basic1_name">Stim Beacon</string>
+    <string name="gekko_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="gekko_ability_basic2_name">Incendiary</string>
+    <string name="gekko_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="gekko_ability_signature_name">Sky Smoke</string>
+    <string name="gekko_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="gekko_ability_ultimate_name">Orbital Strike</string>
+    <string name="gekko_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <!--Deadlock-->
+    <string name="deadlock_name">Brimstone</string>
+    <string name="deadlock_desc">Joining from the USA, Brimstone\'s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.</string>
+    <string name="deadlock_ability_basic1_name">Stim Beacon</string>
+    <string name="deadlock_ability_basic1_desc">INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.</string>
+    <string name="deadlock_ability_basic2_name">Incendiary</string>
+    <string name="deadlock_ability_basic2_desc">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="deadlock_ability_signature_name">Sky Smoke</string>
+    <string name="deadlock_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="deadlock_ability_ultimate_name">Orbital Strike</string>
+    <string name="deadlock_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
 </resources>
