@@ -43,6 +43,7 @@ public class AgentDetailActivity extends AppCompatActivity {
         abilityUltimateDescriptionTextView = findViewById(R.id.abilityUltimateDescriptionTextView);
         backButton = findViewById(R.id.backButton);
 
+        bgImage.setImageResource(agentItem.getBgImage());
         agentImageView.setImageResource(agentItem.getImageAgent());
         abilityBasic1Image.setImageResource(agentItem.getIconoAbility1());
         abilityBasic2Image.setImageResource(agentItem.getIconoAbility2());

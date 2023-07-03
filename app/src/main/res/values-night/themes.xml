@@ -181,4 +181,10 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">11sp</item>
     </style>
+
+    <style name="GlassmorphismImageView">
+        <item name="android:background">@drawable/glassmorphism_background</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
 </resources>

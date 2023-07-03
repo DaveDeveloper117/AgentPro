@@ -23,9 +23,10 @@
                 android:id="@+id/agentImageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
+                android:adjustViewBounds="true"
                 android:background="@drawable/bg_card"
                 android:contentDescription="@string/content_description_media"
+                android:cropToPadding="true"
                 android:paddingBottom="32dp"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -246,11 +247,14 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/bgImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:id="@+id/bgImageView"
-        android:contentDescription="@string/bg_img" />
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/bg_img"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
 
 
 </com.google.android.material.card.MaterialCardView>

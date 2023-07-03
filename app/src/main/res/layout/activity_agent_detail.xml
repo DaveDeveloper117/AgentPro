@@ -6,35 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".AgentDetailActivity">
 
-    <ImageView
-        android:id="@+id/bgImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:alpha="0.2"
-        android:cropToPadding="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mmxx_founder_card_large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:fabSize="mini"
+        style="?attr/floatingActionButtonSmallStyle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/round_arrow_back_ios_24" />
+        app:srcCompat="@drawable/round_arrow_back_ios_24"
+        android:contentDescription="@string/fab_back" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:clipToPadding="true"
+        android:fillViewport="true"
         android:scrollbarSize="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,15 +49,17 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/agent_name"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AgentPro.DisplayMedium" />
+                    android:textAppearance="@style/TextAppearance.AgentPro.DisplayMedium"
+                    android:textStyle="bold" />
 
                 <!-- Media -->
                 <ImageView
                     android:id="@+id/agentImageView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
                     android:contentDescription="@string/content_description_media"
+                    android:cropToPadding="true"
                     android:paddingBottom="8dp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/brimstone_artwork_full" />
@@ -90,15 +81,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textAlignment="center"
                     android:layout_marginTop="16dp"
                     android:text="@string/agent_description"
+                    android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AgentPro.HeadlineMedium"
                     android:textColor="?android:attr/textColorSecondary" />
 
 
             </LinearLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,268 +99,286 @@
                 android:textColor="?android:attr/textColorSecondary" />
             <!-- Buttons -->
 
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:layout_gravity="center"
-                android:scrollbarSize="0dp">
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/basic1CardView"
+                    style="@style/Widget.AgentPro.CardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:baselineAligned="true"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/basic1CardView"
-                        style="@style/Widget.AgentPro.CardView"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:cardPreventCornerOverlap="false"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/abilityBasic1Image"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="?attr/colorPrimary"
+                            android:contentDescription="@string/basic_ability_1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/stim_beacon"
+                            app:tint="?attr/colorOnSecondary" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
 
-                            <ImageView
-                                android:id="@+id/abilityBasic1Image"
-                                android:layout_width="150dp"
-                                android:layout_height="match_parent"
-                                android:background="?attr/colorPrimary"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/stim_beacon"
-                                app:tint="?attr/colorOnSecondary" />
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                style="?attr/floatingActionButtonSmallStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:contentDescription="@string/fab_c"
+                                app:srcCompat="@drawable/c_solid" />
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/abilityBasic1TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="@string/ability_name"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
+
+                            <TextView
+                                android:id="@+id/abilityBasic1DescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="start"
-                                    app:fabSize="mini"
-                                    app:srcCompat="@drawable/c_solid" />
-
-                                <TextView
-                                    android:id="@+id/abilityBasic1TextView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="start"
-                                    android:text="Ability Name"
-                                    android:textAllCaps="true"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.TitleLarge" />
-
-                                <TextView
-                                    android:id="@+id/abilityBasic1DescriptionTextView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="AbilityDescription"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.TitleMedium" />
-
-                            </LinearLayout>
+                                android:text="@string/abilitydescription"
+                                android:textAppearance="@style/TextAppearance.AgentPro.TitleMedium" />
 
                         </LinearLayout>
 
-                    </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/basic2CardView"
-                        style="@style/Widget.AgentPro.CardView"
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/basic2CardView"
+                    style="@style/Widget.AgentPro.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:cardPreventCornerOverlap="false"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
 
-                            <LinearLayout
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                style="?attr/floatingActionButtonSmallStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/fab_q"
+                                app:srcCompat="@drawable/q_solid" />
+
+                            <TextView
+                                android:id="@+id/abilityBasic2TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="@string/ability_name"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
+
+                            <TextView
+                                android:id="@+id/abilityBasic2DescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="end"
-                                    app:fabSize="mini"
-                                    app:srcCompat="@drawable/q_solid" />
-
-                                <TextView
-                                    android:id="@+id/abilityBasic2TextView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="end"
-                                    android:text="Ability Name"
-                                    android:textAllCaps="true"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
-
-                                <TextView
-                                    android:id="@+id/abilityBasic2DescriptionTextView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="AbilityDescription"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
-
-                            </LinearLayout>
-
-                            <ImageView
-                                android:id="@+id/abilityBasic2Image"
-                                android:layout_width="150dp"
-                                android:layout_height="match_parent"
-                                android:background="?attr/colorPrimary"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/stim_beacon"
-                                app:tint="?attr/colorOnSecondary" />
+                                android:text="@string/abilitydescription"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
 
-                    </com.google.android.material.card.MaterialCardView>
+                        <ImageView
+                            android:id="@+id/abilityBasic2Image"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="?attr/colorPrimary"
+                            android:contentDescription="@string/ability_basic_2"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/stim_beacon"
+                            app:tint="?attr/colorOnSecondary" />
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/signatureCardView"
-                        style="@style/Widget.AgentPro.CardView"
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/signatureCardView"
+                    style="@style/Widget.AgentPro.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:cardPreventCornerOverlap="false"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/abilitySignatureImage"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="?attr/colorPrimary"
+                            android:contentDescription="@string/ability_signature"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/stim_beacon"
+                            app:tint="?attr/colorOnSecondary" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
 
-                            <ImageView
-                                android:id="@+id/abilitySignatureImage"
-                                android:layout_width="150dp"
-                                android:layout_height="match_parent"
-                                android:background="?attr/colorPrimary"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/stim_beacon"
-                                app:tint="?attr/colorOnSecondary" />
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                style="?attr/floatingActionButtonSmallStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:contentDescription="@string/fab_e"
+                                app:srcCompat="@drawable/e_solid" />
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/abilitySignatureTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="@string/ability_name"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
+
+                            <TextView
+                                android:id="@+id/abilitySignatureDescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="start"
-                                    app:fabSize="mini"
-                                    app:srcCompat="@drawable/e_solid" />
-
-                                <TextView
-                                    android:id="@+id/abilitySignatureTextView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="start"
-                                    android:text="Ability Name"
-                                    android:textAllCaps="true"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
-
-                                <TextView
-                                    android:id="@+id/abilitySignatureDescriptionTextView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="AbilityDescription"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
-
-                            </LinearLayout>
+                                android:text="@string/abilitydescription"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
 
-                    </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
 
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/ultimateCardView"
-                        style="@style/Widget.AgentPro.CardView"
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ultimateCardView"
+                    style="@style/Widget.AgentPro.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp"
-                        app:cardPreventCornerOverlap="false"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
 
-                            <LinearLayout
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                style="?attr/floatingActionButtonSmallStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/fab_x"
+                                app:srcCompat="@drawable/x_solid" />
+
+                            <TextView
+                                android:id="@+id/abilityUltimateTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="@string/ability_name"
+                                android:textAllCaps="true"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
+
+                            <TextView
+                                android:id="@+id/abilityUltimateDescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="end"
-                                    app:fabSize="mini"
-                                    app:srcCompat="@drawable/x_solid" />
-
-                                <TextView
-                                    android:id="@+id/abilityUltimateTextView"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="end"
-                                    android:text="Ability Name"
-                                    android:textAllCaps="true"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyLarge" />
-
-                                <TextView
-                                    android:id="@+id/abilityUltimateDescriptionTextView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="AbilityDescription"
-                                    android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
-
-                            </LinearLayout>
-
-                            <ImageView
-                                android:id="@+id/abilityUltimateImage"
-                                android:layout_width="150dp"
-                                android:layout_height="match_parent"
-                                android:background="?attr/colorPrimary"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/stim_beacon"
-                                app:tint="?attr/colorOnSecondary" />
+                                android:text="@string/abilitydescription"
+                                android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
 
-                    </com.google.android.material.card.MaterialCardView>
+                        <ImageView
+                            android:id="@+id/abilityUltimateImage"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="?attr/colorPrimary"
+                            android:contentDescription="@string/ability_ultimate"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/stim_beacon"
+                            app:tint="?attr/colorOnSecondary" />
 
-                </LinearLayout>
+                    </LinearLayout>
 
-            </ScrollView>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/bgImage"
+        style="@style/GlassmorphismImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha=".1"
+        android:contentDescription="@string/img_agent"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mmxx_founder_card_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

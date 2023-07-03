@@ -27,7 +27,7 @@
     <string name="brim_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
     <!--Viper-->
     <string name="viper_name">Viper</string>
-    <string name="viper_desc">The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy&#39;s vision. If the toxins don&#39;t kill her prey, her mind games surely will.</string>
+    <string name="viper_desc">The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy\'s vision. If the toxins don\'t kill her prey, her mind games surely will.</string>
     <string name="viper_ability_basic1_name">Snake Bite</string>
     <string name="viper_ability_basic1_desc">EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.</string>
     <string name="viper_ability_basic2_name">Poison Cloud</string>
@@ -93,7 +93,7 @@
     <string name="sage_ability_ultimate_desc">EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.</string>
     <!--Phoenix-->
     <string name="phoenix_name">Phoenix</string>
-    <string name="phoenix_desc">Hailing from the U.K., Phoenix&#39;s star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he&#39;s got backup or not, he&#39;ll rush into a fight on his own terms.</string>
+    <string name="phoenix_desc">Hailing from the U.K., Phoenix\'s star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he\'s got backup or not, he\'ll rush into a fight on his own terms.</string>
     <string name="phoenix_ability_basic1_name">Blaze</string>
     <string name="phoenix_ability_basic1_desc">EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.</string>
     <string name="phoenix_ability_basic2_name">Curveball</string>
@@ -256,4 +256,15 @@
     <string name="deadlock_ability_signature_desc">EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
     <string name="deadlock_ability_ultimate_name">Orbital Strike</string>
     <string name="deadlock_ability_ultimate_desc">EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.</string>
+    <string name="img_agent">agent lol</string>
+    <string name="fab_back">FAB Back</string>
+    <string name="fab_c">FAB C</string>
+    <string name="ability_name">Ability Name</string>
+    <string name="abilitydescription">AbilityDescription</string>
+    <string name="fab_q">FAB Q</string>
+    <string name="basic_ability_1">Basic Ability 1</string>
+    <string name="ability_basic_2">Ability Basic 2</string>
+    <string name="ability_signature">Ability Signature</string>
+    <string name="fab_e">FAB E</string>
+    <string name="ability_ultimate">Ability ULtimate</string>
 </resources>

@@ -182,6 +182,11 @@
         <item name="android:textSize">11sp</item>
     </style>
 
+    <style name="GlassmorphismImageView">
+        <item name="android:background">@drawable/glassmorphism_background</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
     <style name="Theme.AgentPro" parent="Base.Theme.AgentPro"/>
 
 </resources>
