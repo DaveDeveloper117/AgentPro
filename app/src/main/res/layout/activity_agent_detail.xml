@@ -48,6 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:transitionName="agentNameTransition"
                     android:text="@string/agent_name"
                     android:textAppearance="@style/TextAppearance.AgentPro.DisplayMedium"
                     android:textStyle="bold" />
@@ -58,6 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:adjustViewBounds="true"
+                    android:transitionName="agentImageTransition"
                     android:contentDescription="@string/content_description_media"
                     android:cropToPadding="true"
                     android:paddingBottom="8dp"
@@ -72,6 +74,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
                     android:text="@string/agent_role"
+                    android:transitionName="agentRoleTransition"
                     android:textAllCaps="true"
                     android:textAppearance="@style/TextAppearance.AgentPro.TitleLarge"
                     android:textColor="?android:attr/textColorSecondary" />

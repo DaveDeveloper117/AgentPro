@@ -16,6 +16,7 @@ public class AgentDetailActivity extends AppCompatActivity {
     TextView agentNameDetail, agentRoleDetail, agentDescriptionDetail, abilityBasic1TextView, abilityBasic2TextView, abilitySignatureTextView, abilityUltimateTextView
             , abilityBasic1DescriptionTextView, abilityBasic2DescriptionTextView, abilitySignatureDescriptionTextView, abilityUltimateDescriptionTextView;
     FloatingActionButton backButton;
+    private boolean shouldResumeAutoScroll = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,17 +65,32 @@ public class AgentDetailActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AgentDetailActivity.this, DashboardActivity.class);
-                startActivity(intent);
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("isAutoScrollEnabled", shouldResumeAutoScroll);
+                setResult(RESULT_OK, resultIntent);
+
+                // Finalizar la actividad actual y regresar a la actividad DashboardActivity
                 finish();
             }
         });
     }
 
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // Pausar cualquier proceso en la actividad de detalle que pueda afectar el desplazamiento automático en la actividad DashboardActivity
+        shouldResumeAutoScroll = false;
+    }
+
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AgentDetailActivity.this, DashboardActivity.class);
-        startActivity(intent);
+        // Crear un intent para enviar el resultado a la actividad DashboardActivity
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra("isAutoScrollEnabled", shouldResumeAutoScroll);
+        setResult(RESULT_OK, resultIntent);
+
+        // Finalizar la actividad actual y regresar a la actividad DashboardActivity
         finish();
     }
 }

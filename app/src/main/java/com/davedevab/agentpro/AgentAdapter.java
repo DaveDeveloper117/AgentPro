@@ -12,42 +12,41 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.List;
 
 public class AgentAdapter extends RecyclerView.Adapter<AgentAdapter.AgentViewHolder> {
 
     private List<AgentItem> agentItems;
 
-    private final LayoutInflater mInflater;
+    private  LayoutInflater mInflater;
 
-    private final Context context;
+    private  Context context;
 
-    final AgentAdapter.OnItemClickListener listener;
+    private OnItemClickListener listener;
 
     public interface OnItemClickListener{
-        void onItemClick(AgentItem item);
+        void onItemClick(AgentItem agentItem);
     }
 
-    public AgentAdapter(List<AgentItem> agentItems, Context context, AgentAdapter.OnItemClickListener listener){
-        this.mInflater = LayoutInflater.from(context);
+    public AgentAdapter(List<AgentItem> agentItems, Context context, OnItemClickListener listener){
+        this.agentItems = agentItems;
         this.context = context;
         this.listener = listener;
-        this.agentItems = agentItems;
+        this.mInflater = LayoutInflater.from(context);
     }
 
     @NonNull
     @Override
-    public AgentAdapter.AgentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new AgentViewHolder(LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.agent_container, parent, false
-        ));
+    public AgentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = mInflater.inflate(R.layout.agent_container, parent, false);
+        return  new AgentViewHolder(view);
+
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AgentAdapter.AgentViewHolder holder, int position) {
-        holder.bindData(agentItems.get(position));
+    public void onBindViewHolder(@NonNull AgentViewHolder holder, int position) {
+        AgentItem agentItem = agentItems.get(position);
+        holder.bindData(agentItem, listener);
     }
 
     @Override
@@ -63,7 +62,7 @@ public class AgentAdapter extends RecyclerView.Adapter<AgentAdapter.AgentViewHol
         private TextView agentName, agentRole, agentDescription, abilityName1, abilityName2, abilityName3, abilityName4, abilityDescription1, abilityDescription2, abilityDescription3, abilityDescription4;
         private ImageView ability1, ability2, ability3, ability4;
 
-        AgentViewHolder(View itemView) {
+        public AgentViewHolder(@NonNull View itemView) {
             super(itemView);
             bgImage = itemView.findViewById(R.id.bgImageView);
             agentImage = itemView.findViewById(R.id.agentImageView);
@@ -84,7 +83,7 @@ public class AgentAdapter extends RecyclerView.Adapter<AgentAdapter.AgentViewHol
             ability4 = itemView.findViewById(R.id.fabUltimate);
         }
 
-        public void bindData(final AgentItem agentItem){
+        public void bindData(final AgentItem agentItem, OnItemClickListener listener){
             bgImage.setImageResource(agentItem.getBgImage());
             agentImage.setImageResource(agentItem.getImageAgent());
             agentName.setText(agentItem.getNameAgent());

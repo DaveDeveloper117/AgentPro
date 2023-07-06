@@ -8,7 +8,9 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +18,13 @@ import java.util.List;
 public class DashboardActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager2;
-
     AgentAdapter agentAdapter;
-
     List<AgentItem> agentItems;
+    private final Handler autoScrollHandler = new Handler();
+    private int currentItem = 0;
+    private int currentItemPosition = 0;
+    private boolean isAutoScrollEnabled = true;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,17 @@ public class DashboardActivity extends AppCompatActivity {
 
         viewPager2 = findViewById(R.id.agentsViewPager);
 
-        List<AgentItem> agentItems = new ArrayList<>();
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                currentItem = position;
+            }
+        });
+
+
+        viewPager2.setPageTransformer(new HalfwaySlideTransformer());
+
+        agentItems = new ArrayList<>();
 
         agentItems.add(new AgentItem(R.drawable.mmxx_founder_card_large, R.drawable.brimstone_artwork_full, getString(R.string.brim_name), getString(R.string.controller_role), getString(R.string.brim_desc), R.drawable.stim_beacon, R.drawable.incendiary, R.drawable.sky_smoke, R.drawable.orbital_strike, getString(R.string.brim_ability_basic1_name), getString(R.string.brim_ability_basic2_name), getString(R.string.brim_ability_signature_name), getString(R.string.brim_ability_ultimate_name), getString(R.string.brim_ability_basic1_desc), getString(R.string.brim_ability_basic2_desc), getString(R.string.brim_ability_signature_desc), getString(R.string.brim_ability_ultimate_desc)));
         agentItems.add(new AgentItem(R.drawable.unstoppable_viper_card_large, R.drawable.viper_artwork_full, getString(R.string.viper_name), getString(R.string.controller_role), getString(R.string.viper_desc), R.drawable.snake_bite, R.drawable.poison_cloud, R.drawable.toxic_screen, R.drawable.viper_pit, getString(R.string.viper_ability_basic1_name), getString(R.string.viper_ability_basic2_name), getString(R.string.viper_ability_signature_name), getString(R.string.viper_ability_ultimate_name), getString(R.string.viper_ability_basic1_desc), getString(R.string.viper_ability_basic2_desc), getString(R.string.viper_ability_signature_desc), getString(R.string.viper_ability_ultimate_desc)));
@@ -53,7 +68,9 @@ public class DashboardActivity extends AppCompatActivity {
         agentItems.add(new AgentItem(R.drawable.gekko_card_large, R.drawable.gekko_artwork_full, getString(R.string.gekko_name), getString(R.string.initiator_role), getString(R.string.gekko_desc), R.drawable.mosh_pit, R.drawable.wingman, R.drawable.dizzy, R.drawable.thrash, getString(R.string.gekko_ability_basic1_name), getString(R.string.gekko_ability_basic2_name), getString(R.string.gekko_ability_signature_name), getString(R.string.gekko_ability_ultimate_name), getString(R.string.gekko_ability_basic1_desc), getString(R.string.gekko_ability_basic2_desc), getString(R.string.gekko_ability_signature_desc), getString(R.string.gekko_ability_ultimate_desc)));
         agentItems.add(new AgentItem(R.drawable.deadlock_card_large, R.drawable.deadlock_artwork_full, getString(R.string.deadlock_name), getString(R.string.sentinel_role), getString(R.string.deadlock_desc), R.drawable.gravnet, R.drawable.sonic_sensor, R.drawable.barrier_mesh, R.drawable.annihilation, getString(R.string.deadlock_ability_basic1_name), getString(R.string.deadlock_ability_basic2_name), getString(R.string.deadlock_ability_signature_name), getString(R.string.deadlock_ability_ultimate_name), getString(R.string.deadlock_ability_basic1_desc), getString(R.string.deadlock_ability_basic2_desc), getString(R.string.deadlock_ability_signature_desc), getString(R.string.deadlock_ability_ultimate_desc)));
 
-        agentAdapter = new AgentAdapter(agentItems, this, this::moveToDetail);
+        agentAdapter = new AgentAdapter(agentItems, this, this::onItemClick);
+
+
 
         viewPager2.setAdapter(agentAdapter);
         viewPager2.setClipToPadding(false);
@@ -63,20 +80,75 @@ public class DashboardActivity extends AppCompatActivity {
 
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(40));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
+        compositePageTransformer.addTransformer((page, position) -> {
+            float r = 1 - Math.abs(position);
+            page.setScaleX(0.85f + r * 0.15f);
         });
 
         viewPager2.setPageTransformer(compositePageTransformer);
+        viewPager2.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
+
+        startAutoScroll();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopAutoScroll();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isAutoScrollEnabled) {
+            startAutoScroll();
         }
-        public void moveToDetail(AgentItem agentItem){
+    }
+
+    private final Runnable autoScrollRunnable = new Runnable() {
+        @Override
+        public void run() {
+            currentItem++;
+
+            // Verificar si se ha alcanzado el último elemento
+            if (currentItem >= agentItems.size()) {
+                currentItem = agentItems.size() - 1; // Establecer el último elemento como el actual
+                stopAutoScroll(); // Detener el desplazamiento automático
+            } else {
+                viewPager2.setCurrentItem(currentItem); // Avanzar al siguiente elemento
+                startAutoScroll(); // Programar la siguiente iteración
+            }
+        }
+    };
+
+    private void startAutoScroll() {
+        autoScrollHandler.postDelayed(autoScrollRunnable, 3000); // Establecer el tiempo de espera entre desplazamientos
+    }
+
+    private void stopAutoScroll() {
+        autoScrollHandler.removeCallbacks(autoScrollRunnable);
+    }
+
+    public void onItemClick(AgentItem item){
+        stopAutoScroll();
+        currentItemPosition = viewPager2.getCurrentItem();
         Intent intent = new Intent( DashboardActivity.this, AgentDetailActivity.class);
-        intent.putExtra("ListElement", agentItem);
+        intent.putExtra("ListElement", item);
         startActivity(intent);
-        finish();
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        // Verificar si se regresa de la actividad de detalle del elemento
+        if (requestCode == 1 && resultCode == RESULT_OK) {
+            // Obtener el valor de isAutoScrollEnabled de los extras
+            boolean isAutoScrollEnabled = data.getBooleanExtra("isAutoScrollEnabled", true);
+
+            // Reanudar el desplazamiento automático si es necesario
+            if (isAutoScrollEnabled) {
+                this.isAutoScrollEnabled = true;
+                startAutoScroll();
+            }
         }
+    }
 }
