@@ -46,6 +46,7 @@ git clone https://github.com/DaveDeveloper117/AgentPro.git
 ```
 3.  Abre el proyecto en Android Studio.
 4.  Ejecuta la aplicación en un emulador de Android o dispositivo físico.
+5.  O descarga directamente el apk desde aquí [AgentPro](https://github.com/DaveDeveloper117/AgentPro/releases/download/v1.0/app-debug.apk)
 
 ## Contribución 🤝
 
