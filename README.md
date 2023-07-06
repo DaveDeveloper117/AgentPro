@@ -1,3 +1,6 @@
+
+<img src="https://github.com/DaveDeveloper117/AgentPro/blob/master/app/src/main/res/mipmap-xxhdpi/ic_index_round.png" alt="logo" width="100"> 
+
 # AgentPro
 
 AgentPro es una aplicación de catálogo de agentes diseñada para entusiastas del videojuego Valorant. Proporciona información detallada sobre cada uno de los agentes disponibles en el juego, incluyendo sus habilidades, roles y descripciones.
@@ -33,7 +36,7 @@ Durante el desarrollo de este proyecto, he aprendido y aplicado los siguientes c
 
 ## Capturas de Pantalla 🖼️
 
-**TODO: Añadir capturas**
+<img src="assets/ss_1.png" alt="viper" width="300"> <img src="assets/ss_2.png" alt="viper details" width="300"> <img src="assets/ss_3.png" alt="abilities details" width="300">
 
 ## Instalación y Uso 📥
 
