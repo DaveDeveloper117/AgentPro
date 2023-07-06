@@ -22,8 +22,6 @@ public class DashboardActivity extends AppCompatActivity {
     List<AgentItem> agentItems;
     private final Handler autoScrollHandler = new Handler();
     private int currentItem = 0;
-    private int currentItemPosition = 0;
-    private boolean isAutoScrollEnabled = true;
 
 
     @Override
@@ -32,15 +30,6 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         viewPager2 = findViewById(R.id.agentsViewPager);
-
-        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                currentItem = position;
-            }
-        });
-
-
         viewPager2.setPageTransformer(new HalfwaySlideTransformer());
 
         agentItems = new ArrayList<>();
@@ -68,9 +57,7 @@ public class DashboardActivity extends AppCompatActivity {
         agentItems.add(new AgentItem(R.drawable.gekko_card_large, R.drawable.gekko_artwork_full, getString(R.string.gekko_name), getString(R.string.initiator_role), getString(R.string.gekko_desc), R.drawable.mosh_pit, R.drawable.wingman, R.drawable.dizzy, R.drawable.thrash, getString(R.string.gekko_ability_basic1_name), getString(R.string.gekko_ability_basic2_name), getString(R.string.gekko_ability_signature_name), getString(R.string.gekko_ability_ultimate_name), getString(R.string.gekko_ability_basic1_desc), getString(R.string.gekko_ability_basic2_desc), getString(R.string.gekko_ability_signature_desc), getString(R.string.gekko_ability_ultimate_desc)));
         agentItems.add(new AgentItem(R.drawable.deadlock_card_large, R.drawable.deadlock_artwork_full, getString(R.string.deadlock_name), getString(R.string.sentinel_role), getString(R.string.deadlock_desc), R.drawable.gravnet, R.drawable.sonic_sensor, R.drawable.barrier_mesh, R.drawable.annihilation, getString(R.string.deadlock_ability_basic1_name), getString(R.string.deadlock_ability_basic2_name), getString(R.string.deadlock_ability_signature_name), getString(R.string.deadlock_ability_ultimate_name), getString(R.string.deadlock_ability_basic1_desc), getString(R.string.deadlock_ability_basic2_desc), getString(R.string.deadlock_ability_signature_desc), getString(R.string.deadlock_ability_ultimate_desc)));
 
-        agentAdapter = new AgentAdapter(agentItems, this, this::onItemClick);
-
-
+        agentAdapter = new AgentAdapter(agentItems, this, this::moveToDetail);
 
         viewPager2.setAdapter(agentAdapter);
         viewPager2.setClipToPadding(false);
@@ -91,33 +78,15 @@ public class DashboardActivity extends AppCompatActivity {
         startAutoScroll();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        stopAutoScroll();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (isAutoScrollEnabled) {
-            startAutoScroll();
-        }
-    }
-
     private final Runnable autoScrollRunnable = new Runnable() {
         @Override
         public void run() {
             currentItem++;
-
-            // Verificar si se ha alcanzado el último elemento
             if (currentItem >= agentItems.size()) {
-                currentItem = agentItems.size() - 1; // Establecer el último elemento como el actual
-                stopAutoScroll(); // Detener el desplazamiento automático
-            } else {
-                viewPager2.setCurrentItem(currentItem); // Avanzar al siguiente elemento
-                startAutoScroll(); // Programar la siguiente iteración
+                currentItem = 0;// Reiniciar al primer elemento
             }
+            viewPager2.setCurrentItem(currentItem, true);
+            startAutoScroll();
         }
     };
 
@@ -129,26 +98,26 @@ public class DashboardActivity extends AppCompatActivity {
         autoScrollHandler.removeCallbacks(autoScrollRunnable);
     }
 
-    public void onItemClick(AgentItem item){
+    public void moveToDetail(AgentItem item){
         stopAutoScroll();
-        currentItemPosition = viewPager2.getCurrentItem();
         Intent intent = new Intent( DashboardActivity.this, AgentDetailActivity.class);
         intent.putExtra("ListElement", item);
+        intent.putExtra("CurrentItem", currentItem);
         startActivity(intent);
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        // Verificar si se regresa de la actividad de detalle del elemento
-        if (requestCode == 1 && resultCode == RESULT_OK) {
-            // Obtener el valor de isAutoScrollEnabled de los extras
-            boolean isAutoScrollEnabled = data.getBooleanExtra("isAutoScrollEnabled", true);
 
-            // Reanudar el desplazamiento automático si es necesario
-            if (isAutoScrollEnabled) {
-                this.isAutoScrollEnabled = true;
-                startAutoScroll();
-            }
-        }
     }
+/*
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopAutoScroll();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        viewPager2.setCurrentItem(currentItem, true); // Configura el elemento actual
+        startAutoScroll(); // Reinicia el desplazamiento automático
+    }
+*/
 }

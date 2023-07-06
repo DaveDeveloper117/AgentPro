@@ -12,6 +12,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AgentDetailActivity extends AppCompatActivity {
 
+    int currentItem;
+
     ImageView bgImage, agentImageView, abilityBasic1Image, abilityBasic2Image, abilitySignatureImage, abilityUltimateImage;
     TextView agentNameDetail, agentRoleDetail, agentDescriptionDetail, abilityBasic1TextView, abilityBasic2TextView, abilitySignatureTextView, abilityUltimateTextView
             , abilityBasic1DescriptionTextView, abilityBasic2DescriptionTextView, abilitySignatureDescriptionTextView, abilityUltimateDescriptionTextView;
@@ -22,6 +24,10 @@ public class AgentDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent_detail);
+
+        Intent intent = getIntent();
+
+        currentItem = intent.getIntExtra("CurrentItem", 0);
 
         AgentItem agentItem = (AgentItem) getIntent().getSerializableExtra("ListElement");
 
