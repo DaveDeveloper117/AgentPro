@@ -162,7 +162,7 @@
                                 android:id="@+id/abilityBasic1DescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abilitydescription"
+                                android:text="@string/ability_description"
                                 android:textAppearance="@style/TextAppearance.AgentPro.TitleMedium" />
 
                         </LinearLayout>
@@ -214,7 +214,7 @@
                                 android:id="@+id/abilityBasic2DescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abilitydescription"
+                                android:text="@string/ability_description"
                                 android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
@@ -286,7 +286,7 @@
                                 android:id="@+id/abilitySignatureDescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abilitydescription"
+                                android:text="@string/ability_description"
                                 android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
@@ -338,7 +338,7 @@
                                 android:id="@+id/abilityUltimateDescriptionTextView"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/abilitydescription"
+                                android:text="@string/ability_description"
                                 android:textAppearance="@style/TextAppearance.AgentPro.BodyMedium" />
 
                         </LinearLayout>
